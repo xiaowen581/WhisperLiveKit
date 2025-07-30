@@ -6,7 +6,7 @@
 
 - **`simple_mic_to_asr.py`** - 简化版实时转录客户端（推荐）
 - **`mic_to_asr.py`** - 完整功能版本，支持更多自定义选项
-- **`test_connection.py`** - WebSocket 连接测试工具
+- **`check_connection.py`** - WebSocket 连接测试工具
 - **`README_CLIENT.md`** - 本使用说明文档
 
 ## 🚀 快速开始
@@ -40,7 +40,7 @@ INFO:     Uvicorn running on http://localhost:8000
 在另一个终端中，运行连接测试：
 
 ```bash
-python test_connection.py
+python check_connection.py
 ```
 
 如果连接成功，你会看到：
@@ -188,7 +188,7 @@ pip install pyaudio
    ```
    - 确保 WhisperLiveKit 服务器正在运行
    - 检查服务器地址和端口是否正确
-   - 运行 `python test_connection.py` 进行诊断
+   - 运行 `python check_connection.py` 进行诊断
 
 2. **服务器启动失败 - 模型下载问题**
    ```
@@ -251,7 +251,7 @@ whisperlivekit-server --model tiny.en --log-level debug
 
 3. **测试连接**
    ```bash
-   python test_connection.py
+   python check_connection.py
    ```
 
 4. **运行客户端**
